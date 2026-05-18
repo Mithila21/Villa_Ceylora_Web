@@ -3,338 +3,752 @@
   <head>
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1.0" />
-    <title>Villa Ceylora | Antique Tropical Villa</title>
-    <link rel="stylesheet" href="styles.css" />
+
+    <title>Villa Ceylora | Antique Tropical Luxury Villa</title>
+
+    <!-- GOOGLE FONTS -->
     <link rel="preconnect" href="https://fonts.googleapis.com" />
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+
     <link
-      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&amp;family=Inter:wght@300;400;500;600&amp;display=swap"
+      href="https://fonts.googleapis.com/css2?family=Cormorant+Garamond:wght@400;500;600;700&family=Inter:wght@300;400;500;600&display=swap"
       rel="stylesheet"
     />
+
+    <!-- FONT AWESOME -->
     <script
       src="https://kit.fontawesome.com/4d4d0b5d0b.js"
       crossorigin="anonymous"
     ></script>
+
+    <link rel="stylesheet" href="styles.css" />
   </head>
 
-  
   <body>
-    <!-- Navigation -->
-    <nav class="navbar">
-      <a href="#" class="logo">Villa Ceylora</a>
-      <div class="nav-links">
-        <a href="#about">About</a>
-        <a href="#rooms">Rooms</a>
-        <a href="#gallery">Gallery</a>
-        <a href="#offers">Offers</a>
-        <a href="#contact">Contact</a>
-      </div>
-    </nav>
+    <!-- =========================
+       HERO SECTION
+  ========================== -->
 
     <section class="hero">
-      <div class="hero-content">
-        <h1>Villa Ceylora</h1>
-        <p>An antique tropical villa shaped by heritage, calm, and warm island hospitality</p>
-        <a href="#contact" class="btn">Book Now</a>
+      <div class="hero-overlay"></div>
+
+      <!-- NAVBAR -->
+      <nav class="navbar">
+        <a href="#" class="logo">Villa Ceylora</a>
+
+        <!-- HAMBURGER -->
+        <div class="menu-toggle" id="menu-toggle">
+          <span></span>
+          <span></span>
+          <span></span>
+        </div>
+
+        <!-- NAVIGATION -->
+        <div class="nav-menu" id="nav-menu">
+          <div class="nav-links">
+            <a href="#about">About</a>
+            <a href="#rooms">Rooms</a>
+            <a href="#gallery">Gallery</a>
+            <a href="#contact">Contact</a>
+          </div>
+
+          <a href="#contact" class="nav-btn">Book Stay</a>
+        </div>
+      </nav>
+
+      <!-- HERO CONTENT -->
+      <div class="hero-container">
+        <!-- LEFT SIDE -->
+        <div class="hero-left">
+          <span class="hero-tag"> ANTIQUE TROPICAL LUXURY </span>
+
+          <h1>Where Timeless Heritage Meets Tropical Luxury</h1>
+
+          <p>
+            Escape into peaceful colonial elegance, private poolside moments,
+            candlelit evenings, and unforgettable stays surrounded by nature.
+          </p>
+
+          <div class="hero-buttons">
+            <a href="#contact" class="primary-btn"> Book Your Escape </a>
+
+            <a href="#gallery" class="secondary-btn"> Explore Villa </a>
+          </div>
+        </div>
+
+        <!-- FLOATING EXPERIENCE CARD -->
+        <div class="experience-card">
+          <div class="experience-content">
+            <span> EXPERIENCE </span>
+
+            <h3>Luxury Private Villa</h3>
+
+            <div class="experience-items">
+              <div>
+                <h4>Private Pool</h4>
+                <p>Tropical relaxation</p>
+              </div>
+
+              <div>
+                <h4>BBQ Nights</h4>
+                <p>Warm gatherings</p>
+              </div>
+
+              <div>
+                <h4>Remote Work</h4>
+                <p>Peaceful productivity</p>
+              </div>
+            </div>
+          </div>
+        </div>
       </div>
-      <div class="scroll-down">
-        <i class="fas fa-angle-down"></i>
+
+      <!-- SCROLL INDICATOR -->
+      <div class="scroll-indicator">
+        <span></span>
       </div>
     </section>
 
-    <section id="about">
-      <div class="about">
-        <img
-          src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"
-          alt="Villa"
-        />
-        <div class="about-text">
-          <h2>Antique Tropical Luxury</h2>
-          <p>
-            Escape into the peaceful elegance of Villa Ceylora, a heritage
-            tropical retreat inspired by Sri Lankan colonial architecture,
-            carved timber details, aged brass accents, and boutique villa
-            comfort. Enjoy cozy nights, quiet mornings, poolside gatherings,
-            and unforgettable memories in a warm and welcoming atmosphere.
+    <!-- =========================
+     ABOUT SECTION
+========================== -->
+
+    <section id="about" class="about-section">
+      <!-- BACKGROUND DECOR -->
+      <div class="about-bg-glow"></div>
+
+      <div class="about-container">
+        <!-- LEFT IMAGES -->
+        <div class="about-images">
+          <div class="main-image">
+            <img src="./images/07.png" alt="Villa Ceylora" />
+          </div>
+
+          <div class="floating-image">
+            <img src="./images/IMG_3432.jpg" alt="Villa Interior" />
+          </div>
+        </div>
+
+        <!-- RIGHT CONTENT -->
+        <div class="about-content">
+          <span class="about-tag"> ABOUT VILLA CEYLORA </span>
+
+          <h2>A Peaceful Escape Wrapped In Tropical Elegance</h2>
+
+          <p class="about-description">
+            Villa Ceylora blends antique Sri Lankan charm with modern tropical
+            comfort — creating a warm, peaceful space for unforgettable stays,
+            meaningful gatherings, and quiet luxury surrounded by nature.
           </p>
+
+          <!-- FEATURES -->
+          <div class="about-features">
+            <div class="feature-card">
+              <i class="fas fa-water"></i>
+
+              <div>
+                <h4>Private Pool</h4>
+                <p>Relax under tropical skies.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-mug-hot"></i>
+
+              <div>
+                <h4>Cozy Atmosphere</h4>
+                <p>Warm interiors with calm vibes.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-tree"></i>
+
+              <div>
+                <h4>Nature Surroundings</h4>
+                <p>Peaceful greenery all around.</p>
+              </div>
+            </div>
+
+            <div class="feature-card">
+              <i class="fas fa-music"></i>
+
+              <div>
+                <h4>Memorable Gatherings</h4>
+                <p>Perfect for friends & celebrations.</p>
+              </div>
+            </div>
+          </div>
+
+          <!-- STATS -->
+          <div class="about-stats">
+            <div class="stat-box">
+              <h3>100+</h3>
+              <p>Happy Guests</p>
+            </div>
+
+            <div class="stat-box">
+              <h3>Luxury</h3>
+              <p>Private Experience</p>
+            </div>
+
+            <div class="stat-box">
+              <h3>24/7</h3>
+              <p>Warm Hospitality</p>
+            </div>
+          </div>
         </div>
       </div>
     </section>
 
-    <section id="rooms">
-      <div class="section-title">
-        <h2>Heritage Accommodation</h2>
-        <p>Elegant rooms with antique character, soft light, and tropical calm.</p>
+    <!-- =========================
+     ROOMS SECTION
+========================== -->
+
+    <section id="rooms" class="rooms-section">
+      <!-- TOP -->
+      <div class="rooms-top">
+        <span class="section-tag"> LUXURY ACCOMMODATION </span>
+
+        <h2>Elegant Spaces Designed For Comfort & Calm</h2>
+
+        <p>
+          Experience peaceful tropical living with warm interiors,
+          antique-inspired elegance, and relaxing private villa comfort.
+        </p>
       </div>
 
+      <!-- ROOM GRID -->
       <div class="rooms-grid">
-        <div class="card">
-          <img
-            src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"
-          />
-          <div class="card-content">
-            <h3>Ocean Suite</h3>
+        <!-- ROOM 1 -->
+        <div class="room-card">
+          <div class="room-image">
+            <img src="./images/IMG_3512.jpg" alt="Ocean Suite" />
+
+            <div class="room-overlay">
+              <span class="room-price"> $180 / Night </span>
+            </div>
+          </div>
+
+          <div class="room-content">
+            <div class="room-top">
+              <h3>Ocean Suite</h3>
+
+              <div class="room-rating">
+                <i class="fas fa-star"></i>
+                4.9
+              </div>
+            </div>
+
             <p>
-              Luxury antique-inspired suite with tropical ambiance and pool
-              view.
+              Wake up to peaceful mornings, tropical sunlight, and elegant
+              interiors designed for complete relaxation.
             </p>
-            <div class="price">$180 / Night</div>
+
+            <!-- FEATURES -->
+            <div class="room-features">
+              <span>
+                <i class="fas fa-user-friends"></i>
+                2 Guests
+              </span>
+
+              <span>
+                <i class="fas fa-bed"></i>
+                King Bed
+              </span>
+
+              <span>
+                <i class="fas fa-water"></i>
+                Pool View
+              </span>
+            </div>
+
+            <a href="#contact" class="room-btn"> Reserve Stay </a>
           </div>
         </div>
 
-        <div class="card">
+        <!-- ROOM 2 -->
+        <div class="room-card">
+          <div class="room-image">
+            <img src="./images/IMG_3395.jpg" alt="Garden Escape" />
+
+            <div class="room-overlay">
+              <span class="room-price"> $150 / Night </span>
+            </div>
+          </div>
+
+          <div class="room-content">
+            <div class="room-top">
+              <h3>Garden Escape</h3>
+
+              <div class="room-rating">
+                <i class="fas fa-star"></i>
+                4.8
+              </div>
+            </div>
+
+            <p>
+              Surrounded by peaceful greenery, this cozy tropical room offers
+              calm vibes and warm wooden elegance.
+            </p>
+
+            <div class="room-features">
+              <span>
+                <i class="fas fa-user-friends"></i>
+                2 Guests
+              </span>
+
+              <span>
+                <i class="fas fa-bed"></i>
+                Queen Bed
+              </span>
+
+              <span>
+                <i class="fas fa-tree"></i>
+                Garden View
+              </span>
+            </div>
+
+            <a href="#contact" class="room-btn"> Reserve Stay </a>
+          </div>
+        </div>
+
+        <!-- ROOM 3 -->
+        <div class="room-card">
+          <div class="room-image">
+            <img src="./images/IMG_3497.jpg" alt="Romantic Retreat" />
+
+            <div class="room-overlay">
+              <span class="room-price"> $210 / Night </span>
+            </div>
+          </div>
+
+          <div class="room-content">
+            <div class="room-top">
+              <h3>Romantic Retreat</h3>
+
+              <div class="room-rating">
+                <i class="fas fa-star"></i>
+                5.0
+              </div>
+            </div>
+
+            <p>
+              A luxurious tropical hideaway perfect for couples, peaceful
+              evenings, and unforgettable memories together.
+            </p>
+
+            <div class="room-features">
+              <span>
+                <i class="fas fa-user-friends"></i>
+                2 Guests
+              </span>
+
+              <span>
+                <i class="fas fa-bed"></i>
+                Luxury Suite
+              </span>
+
+              <span>
+                <i class="fas fa-heart"></i>
+                Romantic Setup
+              </span>
+            </div>
+
+            <a href="#contact" class="room-btn"> Reserve Stay </a>
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- =========================
+     FOOD EXPERIENCE SECTION
+========================== -->
+
+    <section class="food-section">
+      <!-- BACKGROUND GLOW -->
+      <div class="food-glow"></div>
+
+      <!-- TOP -->
+      <div class="food-top">
+        <span class="section-tag"> TROPICAL DINING EXPERIENCE </span>
+
+        <h2>Luxury Dining Crafted For Memorable Moments</h2>
+
+        <p>
+          Enjoy beautifully prepared tropical dishes, candlelit dinners,
+          refreshing drinks, and unforgettable culinary experiences surrounded
+          by peaceful luxury.
+        </p>
+      </div>
+
+      <!-- FOOD GRID -->
+      <div class="food-grid">
+        <!-- FOOD ITEM -->
+        <div class="food-card large">
           <img
-            src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"
+            src="https://images.unsplash.com/photo-1504674900247-0877df9cc836?q=80&w=1400&auto=format&fit=crop"
+            alt="Luxury Dining"
           />
-          <div class="card-content">
-            <h3>Garden Escape</h3>
-            <p>Warm wooden interiors with relaxing garden surroundings.</p>
-            <div class="price">$150 / Night</div>
+
+          <div class="food-overlay">
+            <span>Signature Experience</span>
+            <h3>Candlelight Tropical Dinner</h3>
           </div>
         </div>
 
-        <div class="card">
+        <!-- FOOD ITEM -->
+        <div class="food-card">
           <img
-            src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"
+            src="https://images.unsplash.com/photo-1546069901-ba9599a7e63c?q=80&w=1200&auto=format&fit=crop"
+            alt="Healthy Tropical Food"
           />
-          <div class="card-content">
-            <h3>Romantic Retreat</h3>
-            <p>Perfect for couples seeking peaceful luxury and cozy nights.</p>
-            <div class="price">$200 / Night</div>
+
+          <div class="food-overlay">
+            <span>Fresh Cuisine</span>
+            <h3>Tropical Garden Flavors</h3>
+          </div>
+        </div>
+
+        <!-- FOOD ITEM -->
+        <div class="food-card tall">
+          <img
+            src="https://images.unsplash.com/photo-1559339352-11d035aa65de?q=80&w=1200&auto=format&fit=crop"
+            alt="Cocktail Drinks"
+          />
+
+          <div class="food-overlay">
+            <span>Refreshing Drinks</span>
+            <h3>Poolside Cocktails</h3>
+          </div>
+        </div>
+
+        <!-- FOOD ITEM -->
+        <div class="food-card wide">
+          <img
+            src="https://images.unsplash.com/photo-1517248135467-4c7edcad34c4?q=80&w=1400&auto=format&fit=crop"
+            alt="Restaurant Dining"
+          />
+
+          <div class="food-overlay">
+            <span>Luxury Atmosphere</span>
+            <h3>Elegant Dining Spaces</h3>
+          </div>
+        </div>
+
+        <!-- FOOD ITEM -->
+        <div class="food-card">
+          <img
+            src="https://images.unsplash.com/photo-1529042410759-befb1204b468?q=80&w=1200&auto=format&fit=crop"
+            alt="Seafood"
+          />
+
+          <div class="food-overlay">
+            <span>Seafood Specials</span>
+            <h3>Fresh Ocean Taste</h3>
           </div>
         </div>
       </div>
     </section>
 
-    <section>
-      <div class="section-title">
-        <h2>Amenities</h2>
-        <p>Comforts for a relaxed villa stay with old-world atmosphere.</p>
+    <!-- =========================
+     GALLERY SECTION
+========================== -->
+
+    <section id="gallery" class="gallery-section">
+      <!-- BACKGROUND GLOW -->
+      <div class="gallery-glow"></div>
+
+      <!-- TOP -->
+      <div class="gallery-top">
+        <span class="section-tag"> MOMENTS AT VILLA CEYLORA </span>
+
+        <h2>Explore The Beauty Of Tropical Luxury</h2>
+
+        <p>
+          From peaceful mornings by the pool to warm lantern-lit evenings, every
+          corner of Villa Ceylora is designed to create unforgettable memories.
+        </p>
       </div>
 
-      <div class="amenities-grid">
-        <div class="card amenity-card">
-          <i class="fas fa-water"></i>
-          <h3>Private Pool</h3>
-        </div>
-        <div class="card amenity-card">
-          <i class="fas fa-wifi"></i>
-          <h3>Free WiFi</h3>
-        </div>
-        <div class="card amenity-card">
-          <i class="fas fa-drumstick-bite"></i>
-          <h3>BBQ Area</h3>
-        </div>
-        <div class="card amenity-card">
-          <i class="fas fa-music"></i>
-          <h3>Karaoke &amp; Music</h3>
-        </div>
-        <div class="card amenity-card">
-          <i class="fas fa-gamepad"></i>
-          <h3>Puzzle Games</h3>
-        </div>
-        <div class="card amenity-card">
-          <i class="fas fa-tree"></i>
-          <h3>Garden View</h3>
-        </div>
-      </div>
-    </section>
+      <!-- GALLERY GRID -->
+      <div class="modern-gallery">
+        <!-- LARGE IMAGE -->
+        <div class="gallery-item large">
+          <img src="./images/07.png" alt="Villa Pool" />
 
-    <section>
-      <div class="section-title">
-        <h2>Experiences</h2>
-        <p>Create slow, memorable evenings in a heritage villa setting.</p>
-      </div>
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <span>Luxury Poolside</span>
 
-      <div class="experience">
-        <img
-          src="https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"
-        />
-        <div>
-          <h2>Lantern-Lit Music &amp; Cozy Gatherings</h2>
-          <p>
-            Enjoy peaceful nights filled with music, laughter, BBQ evenings,
-            warm lantern light, and memorable moments under the tropical skies.
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="gallery">
-      <div class="section-title">
-        <h2>Gallery</h2>
-        <p>Explore the aged textures, warm interiors, and tropical beauty of Villa Ceylora.</p>
-      </div>
-
-      <div class="gallery-grid">
-        <img
-          src="https://images.unsplash.com/photo-1522708323590-d24dbb6b0267?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"
-          onclick="openLightbox(this.src)"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1496417263034-38ec4f0b665a?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"
-          onclick="openLightbox(this.src)"
-        />
-        <img
-          src="https://images.unsplash.com/photo-1505693416388-ac5ce068fe85?q=80&amp;w=2070&amp;auto=format&amp;fit=crop"
-          onclick="openLightbox(this.src)"
-        />
-      </div>
-    </section>
-
-    <section>
-      <div class="section-title">
-        <h2>Guest Reviews</h2>
-      </div>
-
-      <div class="testimonial-grid">
-        <div class="card testimonial">
-          <div class="stars">★★★★★</div>
-          <p>
-            “Beautiful atmosphere and amazing hospitality. Truly unforgettable.”
-          </p>
-        </div>
-
-        <div class="card testimonial">
-          <div class="stars">★★★★★</div>
-          <p>
-            “The perfect antique villa getaway with peaceful vibes and timeless comfort.”
-          </p>
-        </div>
-      </div>
-    </section>
-
-    <section id="offers">
-      <div class="section-title">
-        <h2>Special Offers</h2>
-      </div>
-
-      <div class="offers-grid">
-        <div class="card">
-          <div class="card-content">
-            <h3>Weekend Escape</h3>
-            <p>Luxury weekend package for families and friends.</p>
+              <h3>Peaceful Tropical Escape</h3>
+            </div>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-content">
-            <h3>Couple Retreat</h3>
-            <p>Romantic tropical stay with premium ambiance.</p>
+        <!-- SMALL -->
+        <div class="gallery-item">
+          <img src="./images/1.jpg" alt="Villa Room" />
+
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <span>Elegant Interiors</span>
+
+              <h3>Warm Antique Comfort</h3>
+            </div>
           </div>
         </div>
 
-        <div class="card">
-          <div class="card-content">
-            <h3>Friends Night-Out</h3>
-            <p>Music, BBQ, and unforgettable villa experiences.</p>
+        <!-- TALL -->
+        <div class="gallery-item tall">
+          <img src="./images/IMG_3395.jpg" alt="Villa Garden" />
+
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <span>Tropical Nature</span>
+
+              <h3>Calm Green Surroundings</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- WIDE -->
+        <div class="gallery-item wide">
+          <img src="./images/IMG_3432.jpg" alt="Villa Experience" />
+
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <span>Friends & Gatherings</span>
+
+              <h3>Memorable Villa Moments</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- SMALL -->
+        <div class="gallery-item">
+          <img src="./images/IMG_3497.jpg" alt="BBQ Night" />
+
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <span>Cozy Evenings</span>
+
+              <h3>BBQ & Music Nights</h3>
+            </div>
+          </div>
+        </div>
+
+        <!-- SMALL -->
+        <div class="gallery-item">
+          <img src="./images/IMG_3512.jpg" alt="Villa Exterior" />
+
+          <div class="gallery-overlay">
+            <div class="gallery-content">
+              <span>Villa Exterior</span>
+
+              <h3>Timeless Tropical Elegance</h3>
+            </div>
           </div>
         </div>
       </div>
     </section>
 
-    <section class="location">
-      <div class="section-title">
-        <h2>Location</h2>
-        <p>Peaceful tropical surroundings near Sri Lanka’s coastal beauty.</p>
+    <!-- =========================
+     CONTACT SECTION
+========================== -->
+
+    <section id="contact" class="contact-section">
+      <!-- BACKGROUND -->
+      <div class="contact-glow"></div>
+
+      <!-- TOP -->
+      <div class="contact-top">
+        <span class="section-tag"> CONTACT & BOOKINGS </span>
+
+        <h2>Plan Your Perfect Villa Escape</h2>
+
+        <p>
+          Contact us for reservations, celebrations, peaceful getaways, and
+          unforgettable tropical villa experiences.
+        </p>
       </div>
 
-      <iframe
-        src="https://maps.google.com/maps?q=sri%20lanka&amp;t=&amp;z=6&amp;ie=UTF8&amp;iwloc=&amp;output=embed"
-      ></iframe>
-    </section>
+      <!-- CONTACT WRAPPER -->
+      <div class="contact-wrapper">
+        <!-- LEFT SIDE -->
+        <div class="contact-form-box">
+          <div class="form-header">
+            <h3>Book Your Stay</h3>
 
-    <section id="contact">
-      <div class="section-title">
-        <h2>Contact &amp; Booking</h2>
-      </div>
+            <p>Fill out the form and we’ll get back to you shortly.</p>
+          </div>
 
-      <div class="contact">
-        <form>
-          <input type="text" placeholder="Your Name" />
-          <input type="email" placeholder="Email Address" />
-          <input type="text" placeholder="Phone Number" />
-          <textarea placeholder="Your Message"></textarea>
-          <button class="btn">Send Inquiry</button>
-        </form>
+          <!-- FORM -->
+          <form class="booking-form">
+            <div class="input-group">
+              <input type="text" placeholder="Your Full Name" required />
+            </div>
 
-        <div>
-          <h2 style="font-size: 3rem; color: var(--wood); margin-bottom: 20px">
-            Book Your Escape
-          </h2>
-          <p style="line-height: 1.8; color: #555">
-            Experience timeless heritage comfort at Villa Ceylora. Contact us
-            for reservations, group stays, romantic escapes, and unforgettable
-            antique villa experiences.
-          </p>
+            <div class="input-row">
+              <div class="input-group">
+                <input type="email" placeholder="Email Address" required />
+              </div>
 
-          <div
-            class="socials"
-            style="justify-content: flex-start; margin-top: 30px"
-          >
-            <a href="#"><i class="fab fa-instagram"></i></a>
-            <a href="#"><i class="fab fa-facebook"></i></a>
-            <a href="#"><i class="fab fa-whatsapp"></i></a>
+              <div class="input-group">
+                <input type="text" placeholder="Phone Number" required />
+              </div>
+            </div>
+
+            <div class="input-row">
+              <div class="input-group">
+                <input type="date" required />
+              </div>
+
+              <div class="input-group">
+                <input type="date" required />
+              </div>
+            </div>
+
+            <div class="input-group">
+              <select required>
+                <option value="">Guests</option>
+
+                <option>1 Guest</option>
+
+                <option>2 Guests</option>
+
+                <option>3 Guests</option>
+
+                <option>4+ Guests</option>
+              </select>
+            </div>
+
+            <div class="input-group">
+              <textarea
+                placeholder="Tell us about your stay, celebration, or special request..."
+              ></textarea>
+            </div>
+
+            <button type="submit" class="contact-btn">
+              Send Booking Inquiry
+            </button>
+          </form>
+        </div>
+
+        <!-- RIGHT SIDE -->
+        <div class="location-box">
+          <!-- MAP -->
+          <div class="map-container">
+            <iframe
+              src="https://maps.google.com/maps?q=6.08934424164355,80.17348278908469&t=&z=15&ie=UTF8&iwloc=&output=embed"
+              allowfullscreen=""
+              loading="lazy"
+            ></iframe>
+          </div>
+
+          <!-- LOCATION INFO -->
+          <div class="location-content">
+            <span> VILLA LOCATION </span>
+
+            <h3>Villa Ceylora</h3>
+
+            <p>
+              Nestled in peaceful tropical surroundings near Sri Lanka’s
+              southern coastal beauty — perfect for relaxing escapes,
+              celebrations, and memorable stays.
+            </p>
+
+            <!-- INFO ITEMS -->
+            <div class="location-info">
+              <div class="info-item">
+                <i class="fas fa-map-marker-alt"></i>
+
+                <div>
+                  <h4>Location</h4>
+                  <p>Galle, Sri Lanka</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fas fa-phone-alt"></i>
+
+                <div>
+                  <h4>Phone</h4>
+                  <p>+94 70 149 1308</p>
+                </div>
+              </div>
+
+              <div class="info-item">
+                <i class="fas fa-envelope"></i>
+
+                <div>
+                  <h4>Email</h4>
+                  <p>ceyloravilla@gmail.com</p>
+                </div>
+              </div>
+            </div>
           </div>
         </div>
       </div>
     </section>
+
+    <!-- =========================
+       FOOTER
+  ========================== -->
 
     <footer>
       <h2>Villa Ceylora</h2>
-      <p>An antique tropical villa for calm stays and warm gatherings.</p>
+
+      <p>
+        Antique tropical luxury villa for peaceful escapes and unforgettable
+        gatherings.
+      </p>
 
       <div class="socials">
-        <a href="#"><i class="fab fa-instagram"></i></a>
-        <a href="#"><i class="fab fa-facebook"></i></a>
-        <a href="#"><i class="fab fa-whatsapp"></i></a>
+        <a href="#">
+          <i class="fab fa-instagram"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-facebook"></i>
+        </a>
+
+        <a href="#">
+          <i class="fab fa-whatsapp"></i>
+        </a>
       </div>
 
-      <p style="margin-top: 20px">© 2026 Villa Ceylora. All Rights Reserved.</p>
+      <p class="footer-copy">© 2026 Villa Ceylora. All Rights Reserved.</p>
     </footer>
-
-    <div class="lightbox" id="lightbox">
-      <img id="lightbox-img" />
-    </div>
 
     <script>
       window.addEventListener("scroll", () => {
-        document
-          .querySelector(".navbar")
-          .classList.toggle("scrolled", window.scrollY > 50);
+        const navbar = document.querySelector(".navbar");
+
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
       });
 
-      function openLightbox(src) {
-        document.getElementById("lightbox").style.display = "flex";
-        document.getElementById("lightbox-img").src = src;
-      }
+      window.addEventListener("scroll", () => {
+        const navbar = document.querySelector(".navbar");
 
-      document.getElementById("lightbox").addEventListener("click", () => {
-        document.getElementById("lightbox").style.display = "none";
+        if (window.scrollY > 50) {
+          navbar.classList.add("scrolled");
+        } else {
+          navbar.classList.remove("scrolled");
+        }
       });
 
-      const reveals = document.querySelectorAll("section");
+      // MOBILE MENU TOGGLE
+      const menuToggle = document.getElementById("menu-toggle");
+      const navMenu = document.getElementById("nav-menu");
 
-      function revealSections() {
-        reveals.forEach((sec) => {
-          const top = sec.getBoundingClientRect().top;
-          const height = window.innerHeight;
-
-          if (top < height - 100) {
-            sec.style.opacity = 1;
-            sec.style.transform = "translateY(0)";
-          }
-        });
-      }
-
-      reveals.forEach((sec) => {
-        sec.style.opacity = 0;
-        sec.style.transform = "translateY(50px)";
-        sec.style.transition = "1s ease";
+      menuToggle.addEventListener("click", () => {
+        navMenu.classList.toggle("active");
       });
-
-      window.addEventListener("scroll", revealSections);
-      revealSections();
     </script>
   </body>
 </html>
