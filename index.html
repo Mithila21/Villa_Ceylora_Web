@@ -16,10 +16,10 @@
     />
 
     <!-- FONT AWESOME -->
-    <script
-      src="https://kit.fontawesome.com/4d4d0b5d0b.js"
-      crossorigin="anonymous"
-    ></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.5.1/css/all.min.css"
+    />
 
     <link rel="stylesheet" href="styles.css" />
   </head>
@@ -620,10 +620,8 @@
             class="booking-form"
             action="https://formspree.io/f/mlgvezak"
             method="POST"
+            id="bookingForm"
           >
-            <!-- REDIRECT AFTER SUBMIT -->
-            <input type="hidden" name="_next" value="index.html" />
-
             <div class="input-group">
               <input
                 type="text"
@@ -680,7 +678,7 @@
               ></textarea>
             </div>
 
-            <button type="submit" class="contact-btn">
+            <button type="submit" class="contact-btn" id="submitBtn">
               Send Booking Inquiry
             </button>
           </form>
@@ -772,16 +770,30 @@
       <p class="footer-copy">© 2026 Villa Ceylora. All Rights Reserved.</p>
     </footer>
 
+    <!-- FLOATING BUTTONS -->
+
+    <div class="floating-buttons">
+      <!-- WHATSAPP -->
+
+      <a
+        href="https://wa.me/94701491308"
+        target="_blank"
+        class="floating-btn whatsapp-btn"
+      >
+        <i class="fab fa-whatsapp"></i>
+      </a>
+
+      <!-- SCROLL TOP -->
+
+      <button class="floating-btn top-btn" id="scrollTopBtn">
+        <i class="fas fa-arrow-up"></i>
+      </button>
+    </div>
+
     <script>
-      window.addEventListener("scroll", () => {
-        const navbar = document.querySelector(".navbar");
-
-        if (window.scrollY > 50) {
-          navbar.classList.add("scrolled");
-        } else {
-          navbar.classList.remove("scrolled");
-        }
-      });
+      // =========================
+      // NAVBAR SCROLL EFFECT
+      // =========================
 
       window.addEventListener("scroll", () => {
         const navbar = document.querySelector(".navbar");
@@ -793,12 +805,84 @@
         }
       });
 
-      // MOBILE MENU TOGGLE
+      // =========================
+      // MOBILE MENU
+      // =========================
+
       const menuToggle = document.getElementById("menu-toggle");
       const navMenu = document.getElementById("nav-menu");
 
       menuToggle.addEventListener("click", () => {
         navMenu.classList.toggle("active");
+      });
+
+      // =========================
+      // FORMSPREE FORM
+      // =========================
+
+      const bookingForm = document.getElementById("bookingForm");
+      const submitBtn = document.getElementById("submitBtn");
+
+      bookingForm.addEventListener("submit", async function (e) {
+        e.preventDefault();
+
+        submitBtn.disabled = true;
+        submitBtn.innerHTML = "Sending...";
+
+        const originalBtnText = submitBtn.innerHTML;
+
+        const formData = new FormData(bookingForm);
+
+        try {
+          const response = await fetch(bookingForm.action, {
+            method: "POST",
+            body: formData,
+            headers: {
+              Accept: "application/json",
+            },
+          });
+
+          if (response.ok) {
+            submitBtn.innerHTML = "✓ Inquiry Sent";
+
+            bookingForm.reset();
+
+            setTimeout(() => {
+              submitBtn.disabled = false;
+              submitBtn.innerHTML = "Send Booking Inquiry";
+            }, 3000);
+          } else {
+            throw new Error("Submission failed");
+          }
+        } catch (error) {
+          submitBtn.disabled = false;
+          submitBtn.innerHTML = "Try Again";
+          console.error(error);
+
+          setTimeout(() => {
+            submitBtn.innerHTML = "Send Booking Inquiry";
+          }, 3000);
+        }
+      });
+      // =========================
+      // SCROLL TO TOP BUTTON
+      // =========================
+
+      const scrollTopBtn = document.getElementById("scrollTopBtn");
+
+      window.addEventListener("scroll", () => {
+        if (window.scrollY > 300) {
+          scrollTopBtn.classList.add("show");
+        } else {
+          scrollTopBtn.classList.remove("show");
+        }
+      });
+
+      scrollTopBtn.addEventListener("click", () => {
+        window.scrollTo({
+          top: 0,
+          behavior: "smooth",
+        });
       });
     </script>
   </body>
