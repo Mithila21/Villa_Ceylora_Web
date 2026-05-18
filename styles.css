@@ -194,32 +194,6 @@ section {
 }
 
 /* =========================
-   LOGO
-========================= */
-
-.logo {
-  position: relative;
-
-  color: white;
-
-  text-decoration: none;
-
-  font-size: 2.1rem;
-
-  font-family: "Cormorant Garamond", serif;
-
-  font-weight: 600;
-
-  letter-spacing: 0.5px;
-
-  transition: 0.3s;
-}
-
-.logo:hover {
-  opacity: 0.9;
-}
-
-/* =========================
    NAV LINKS
 ========================= */
 
@@ -2099,6 +2073,53 @@ footer p {
   }
 }
 
+/* =========================
+   LOGO
+========================= */
+
+.logo {
+  display: flex;
+  align-items: center;
+  gap: 14px;
+
+  text-decoration: none;
+
+  font-family: "Cormorant Garamond", serif;
+  font-size: 2rem;
+  font-weight: 600;
+
+  color: white;
+
+  letter-spacing: 1px;
+}
+
+.logo img {
+  width: 52px;
+  height: 52px;
+
+  object-fit: contain;
+
+  filter: drop-shadow(0 4px 12px rgba(0, 0, 0, 0.35));
+}
+
+.logo span {
+  color: white;
+}
+
+/* MOBILE */
+
+@media (max-width: 768px) {
+  .logo {
+    font-size: 1.5rem;
+    gap: 10px;
+  }
+
+  .logo img {
+    width: 42px;
+    height: 42px;
+  }
+}
+
 @media (max-width: 768px) {
   .navbar {
     top: 12px;
@@ -2110,11 +2131,6 @@ footer p {
 
     flex-direction: column;
     gap: 16px;
-  }
-
-  .logo {
-    font-size: 1.7rem;
-    text-align: center;
   }
 
   .nav-links {
@@ -2321,10 +2337,6 @@ footer p {
     justify-content: center;
 
     width: 100%;
-  }
-
-  .logo {
-    font-size: 1.7rem;
   }
 }
 
@@ -2718,18 +2730,14 @@ footer p {
   transition: 0.4s ease;
 
   box-shadow:
-    0 10px 30px rgba(0,0,0,0.18),
-    inset 0 1px 0 rgba(255,255,255,0.15);
+    0 10px 30px rgba(0, 0, 0, 0.18),
+    inset 0 1px 0 rgba(255, 255, 255, 0.15);
 }
 
 /* WHATSAPP */
 
 .whatsapp-btn {
-  background: linear-gradient(
-    135deg,
-    #25d366,
-    #128c7e
-  );
+  background: linear-gradient(135deg, #25d366, #128c7e);
 
   color: white;
   text-decoration: none;
@@ -2742,11 +2750,7 @@ footer p {
 /* TOP BUTTON */
 
 .top-btn {
-  background: linear-gradient(
-    135deg,
-    #d7b06d,
-    #8d6233
-  );
+  background: linear-gradient(135deg, #d7b06d, #8d6233);
 
   color: white;
 
