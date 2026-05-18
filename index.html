@@ -452,6 +452,38 @@
     </section>
 
     <!-- =========================
+     GOOGLE REVIEWS SECTION
+========================== -->
+
+    <section class="reviews-section">
+      <!-- BACKGROUND GLOW -->
+      <div class="reviews-glow"></div>
+
+      <!-- TOP -->
+      <div class="reviews-top">
+        <span class="section-tag"> GUEST EXPERIENCES </span>
+
+        <h2>What Our Guests Say About Villa Ceylora</h2>
+
+        <p>
+          Discover real experiences shared by guests who enjoyed peaceful
+          luxury, tropical comfort, and unforgettable stays at Villa Ceylora.
+        </p>
+      </div>
+
+      <!-- GOOGLE REVIEWS WIDGET -->
+      <div class="reviews-widget">
+        <!-- Elfsight Google Reviews -->
+        <script src="https://elfsightcdn.com/platform.js" async></script>
+
+        <div
+          class="elfsight-app-aa1405e5-2aee-4a61-8e4e-f1ba129772ee"
+          data-elfsight-app-lazy
+        ></div>
+      </div>
+    </section>
+
+    <!-- =========================
      GALLERY SECTION
 ========================== -->
 
@@ -584,47 +616,66 @@
           </div>
 
           <!-- FORM -->
-          <form class="booking-form">
+          <form
+            class="booking-form"
+            action="https://formspree.io/f/mlgvezak"
+            method="POST"
+          >
+            <!-- REDIRECT AFTER SUBMIT -->
+            <input type="hidden" name="_next" value="index.html" />
+
             <div class="input-group">
-              <input type="text" placeholder="Your Full Name" required />
+              <input
+                type="text"
+                name="fullName"
+                placeholder="Your Full Name"
+                required
+              />
             </div>
 
             <div class="input-row">
               <div class="input-group">
-                <input type="email" placeholder="Email Address" required />
+                <input
+                  type="email"
+                  name="email"
+                  placeholder="Email Address"
+                  required
+                />
               </div>
 
               <div class="input-group">
-                <input type="text" placeholder="Phone Number" required />
+                <input
+                  type="text"
+                  name="phone"
+                  placeholder="Phone Number"
+                  required
+                />
               </div>
             </div>
 
             <div class="input-row">
               <div class="input-group">
-                <input type="date" required />
+                <input type="date" name="checkIn" required />
               </div>
 
               <div class="input-group">
-                <input type="date" required />
+                <input type="date" name="checkOut" required />
               </div>
             </div>
 
             <div class="input-group">
-              <select required>
+              <select name="guests" required>
                 <option value="">Guests</option>
-
                 <option>1 Guest</option>
-
                 <option>2 Guests</option>
-
                 <option>3 Guests</option>
-
                 <option>4+ Guests</option>
               </select>
             </div>
 
             <div class="input-group">
               <textarea
+                name="message"
                 placeholder="Tell us about your stay, celebration, or special request..."
               ></textarea>
             </div>
