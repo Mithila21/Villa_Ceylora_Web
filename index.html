@@ -111,6 +111,9 @@
       <div class="scroll-indicator">
         <span></span>
       </div>
+
+      <!-- SPARKLES CONTAINER -->
+      <div id="sparkles-container"></div>
     </section>
 
     <!-- =========================
@@ -886,6 +889,84 @@
           top: 0,
           behavior: "smooth",
         });
+      });
+
+      // =========================
+      // SPARKLE ANIMATION
+      // =========================
+
+      const sparklesContainer = document.getElementById("sparkles-container");
+      const heroSection = document.querySelector(".hero");
+      const sparkleColors = [
+        "#c89a5b",
+        "#f3d8a6",
+        "#e6c87f",
+        "#d4a852",
+        "#f0e6d2",
+      ];
+
+      let sparkleInterval = null;
+
+      function createSparkle() {
+        if (!sparklesContainer) return;
+
+        const sparkle = document.createElement("div");
+        sparkle.className = "sparkle";
+
+        const size = Math.random() * 3 + 1;
+        sparkle.style.width = size + "px";
+        sparkle.style.height = size + "px";
+        sparkle.style.left = Math.random() * 100 + "%";
+        sparkle.style.top = Math.random() * 100 + "%";
+        sparkle.style.backgroundColor =
+          sparkleColors[Math.floor(Math.random() * sparkleColors.length)];
+
+        const duration = Math.random() * 3 + 2;
+        const delay = Math.random() * 0.5;
+        sparkle.style.animationDuration = duration + "s";
+        sparkle.style.animationDelay = delay + "s";
+
+        sparklesContainer.appendChild(sparkle);
+
+        setTimeout(
+          () => {
+            sparkle.remove();
+          },
+          (duration + delay) * 1000,
+        );
+      }
+
+      function startSparkles() {
+        if (!sparkleInterval) {
+          sparkleInterval = setInterval(() => {
+            createSparkle();
+          }, 300);
+        }
+      }
+
+      function stopSparkles() {
+        if (sparkleInterval) {
+          clearInterval(sparkleInterval);
+          sparkleInterval = null;
+          if (sparklesContainer) {
+            sparklesContainer.innerHTML = "";
+          }
+        }
+      }
+
+      // Check if hero is in view on load
+      if (heroSection) {
+        startSparkles();
+      }
+
+      // Control sparkles based on scroll position
+      window.addEventListener("scroll", () => {
+        const heroRect = heroSection.getBoundingClientRect();
+        if (heroRect.bottom > 0) {
+          startSparkles();
+        } else {
+          stopSparkles();
+        }
       });
     </script>
   </body>
